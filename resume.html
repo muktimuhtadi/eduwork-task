@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rangkuman materi git</title>
+</head>
+<body>
+    <h1>GIT INIT</h1>
+
+    <p>Untuk menginisialisasi repository atau memberi tahu folder saat akan dijadikan repository</p>
+    <p>Kita tidak bisa menggunakan git tanpa menginisialisasinya</p>
+
+    <p>Membuat folder</p>
+    <p>mkdir [nama folder]</p>
+
+    <p>menginisialisasi folder yang sudah dibuat</p>
+    <p>git init</p>
+
+    <h1>GIT CONFIG</h1>
+
+    <p>sebelum menggunakan git, wajib dikonfigurasi dulu</p>
+    <p>2 tipe konfigurasi: local & global</p>
+
+    <p>melihat semua konfigurasi di git</p>
+    <p>git config --list</p>
+
+    <p>konfigurasi local usernam</p>
+    <p>git config --local user.name</p>
+
+    <p>konfiguasi local email</p>
+    <p>git config --local user.email</p>
+
+    <p>kalau globaal, --local tinggal diganti --global</p>
+    
+    <h1>GIT STATUS</h1>
+
+    <p>digunakan untuk mengecek status</p>
+
+    <p>membuka vs code melalui terminal git bash</p>
+    <p>code</p>
+
+    <p>memasukkan semua file ke dalam staging area</p>
+    <p>git add .</p>
+
+    <p>mengecek apakah file sudah masuk ke staging area</p>
+    <p>git status</p>
+
+    <h1>GIT COMMIT</h1>
+
+    <p>membuat commit</p>
+    <p>git commit -m "deskripsi"</p>
+
+    <p>mengece hasil commit</p>
+    <p>git log</p>
+
+    <p>sebelum commit harus add dulu</p>
+    <p>git add .</p>
+
+    <p>keluar dari log</p>
+    <p>q</p>
+
+    <p>membatalkan commit</p>
+    <p>git reset --hard</p>
+
+    <h1>GIT CLONE</h1>
+
+    <p>untuk mengkloning repo dari server (github/gitlab)</p>
+    <p>buka repo di github, copy tautan https, paste di terminal git bash dengan command:</p>
+    <p>git clone [tautan dari github]</p>
+
+    <h1>GIT REMOTE</h1>
+
+    <p>git remote -v</p>
+
+    <h1>GIT BRANCH</h1>
+
+    <p>cabang/kopian dari repo</p>
+    <p>parallel development/kolaborasi</p>
+    <p>memanajemen perkembangan</p>
+    <p>digunakan saat mengembangkan fitur baru</p>
+
+    <p>melihat semua branch local</p>
+    <p>git branch</p>
+
+    <p>melihat semua branch</p>
+    <p>git branch --all</p>
+
+    <p>membuat branch baru</p>
+    <p>git branch [nama-branch]</p>
+
+    <p>berpindah ke branch lain</p>
+    <p>git checkout [nama-branch]</p>
+
+    <p>menghapus branch</p>
+    <p>git branch -d [nama-branch]</p>
+
+    <p>menggabungkan commit dari 2 branch</p>
+    <p>git merge [nama-branch]</p>
+
+    <h1>CONFLICT</h1>
+
+    <p>kondisi ketika 2 programmer menggabungkan 2 branch yang memiliki perubahan pada file yang sama</p>
+    <p>ketika conflict, tidak bisa commit, harus damai dulu</p>
+
+</body>
+</html>
