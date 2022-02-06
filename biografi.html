@@ -3,18 +3,83 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
-    <title>my portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title><div> portofolio</div></title>
     <style>
         h1 {
-            font-family: 'Neonderthaw', cursive;
+            font-family: 'Zilla Slab Highlight', cursive;
+            height: 50px;
+            background-color: aquamarine;
+        }
+        h3 {
+            font-family: 'Zilla Slab Highlight', cursive;
+        }
+        p {
+            font-family: 'Source Code Pro', monospace;
+            text-align: center;
+            text-indent: 1cm;
+            }
+        ul {
+            font-family: 'Source Code Pro', monospace;
+        }
+        ol {
+            font-family: 'Source Code Pro', monospace;
+        }
+        table {
+            font-family: 'Source Code Pro', monospace;
+        }
+        body {
+            background-image: url('bg.png');
+            background-size: cover
+        }
+        a link {
+            color: blue;
+        }
+        a :visited {
+            color: aqua;
+        }
+        a:hover {
+            color: blueviolet;
+        }
+        a:active {
+            color: chartreuse;
+        }
+        .nol {
+            padding-top: 5px;
+        }
+        .satu {
+            background-color: aquamarine;
+        }
+        .dua {
+            background-color: aquamarine;
+        }
+        .tiga {
+            background-color: aquamarine;
+        }
+        .empat {
+            background-color: aquamarine;
+        }
+        .lima {
+            background-color: aquamarine;
+        }
+        .footer {
+            background-color: red;
+            height: 50px;
+            padding-top: 1px;
+            padding-left: 500px;
+        }
+        .mail {
+            border: 5px,solid, black;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">My Portofolio</h3>
+    <h1 style="text-align: center;"><div class="nol">My Portofolio</div></h3>
     <br>
-    <h3 style="text-align: center;">Biografi</h3>
+    <h3 style="text-align: center;"><div class="satu">Biografi</div></h3>
     <p>Halo, perkenalkan, saya Mukti Muhtadi, biasa dipanggil Mukti.
         Saya tinggal di Kabupaten Karanganyar, sebelah timur Kota Surakarta.
         Sekitar 1 jam perjalanan dari Kota Surakarta, karena rumah saya berada di kaki Gunung Lawu.
@@ -25,21 +90,28 @@
         Yaitu di bidang software engineering.
     </p>
     <br>
-    <h3 style="text-align: center;">Skills</h3>
-    <ul>
+    <h3 style="text-align: center;"><div class="dua">Skills</div></h3>
+    <ul class="ul">
         <li>HTML</li>
         <li>CSS</li>
+        <li>CSS Flexbox</li>
         <li>Bootstrap</li>
     </ul>
     <br>
-    <h3 style="text-align: center;" style="color: firebrick;">Other Skills</h3>
+    <h3 style="text-align: center;"><div class="tiga">Other Skills</div></h3>
     <ol>
         <li>Penetration Testing</li>
         <li>Cyber Security</li>
+        <li>Jurnalisme</li>
+        <li>Menulis Opini</li>
+        <li>Footgrafer</li>
+        <li>Desainer Grafis</li>
+        <li>Editing Video</li>
+        <li>Content Creator</li>
     </ol>
     <br>
-    <h3 style="text-align: center;">My CLose Friends</h3>
-    <table style="text-align: center;" border="1px" cellspacing="0" cellpadding="3">
+    <h3 style="text-align: center;"><div class="empat">My CLose Friends</div></h3>
+    <table style="text-align: center;" border="1px" cellspacing="0" cellpadding="3" >
         <tr>
             <th>No</th>
             <th>Nama</th>
@@ -52,7 +124,7 @@
         </tr>
         <tr>
             <td>2</td>
-            <td>Muhammad Happy</td>
+            <td>M Happy</td>
             <td>Bantul</td>
         </tr>
         <tr>
@@ -62,22 +134,25 @@
         </tr>
     </table>
     <br>
-    <h3 style="text-align: center;">Contact Me</h3>
+    <h3 style="text-align: center;"><div class="lima">Contact Me</div></h3>
     <table>
-        <form>
+        <form class="form">
             <tr>
                 <td><label>email</label></td>
-                <td><input type="email"></td>
+                <td><input type="email" class="mail"></td>
             </tr>
             <tr>
                 <td><label>message</label></td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td><td><input type="submit"></td></td>
+                <td><td><input type="submit" value="Send"></td></td>
             </tr>
         </form>
     </table>
+    <div class="footer">
+        <p><strong>&copy Mukti Muhtadi 2022</strong></p>
+    </div>
 </body>
 
 </html>
