@@ -1,7 +1,10 @@
 .navbar {
     background: #1134d3;
     padding-left: 50px;
-    padding-top: ;
+}
+
+.buah {
+    color: #1134d3;
 }
 
 .navbar-brand {
