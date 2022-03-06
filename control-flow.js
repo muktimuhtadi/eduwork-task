@@ -54,7 +54,7 @@ else if (nilai >= 40 && nilai < 60) {
 else if (nilai >= 20 && nilai < 40) {
     alert("D");
 }
-else if (nilai >= 20 && nilai < 40) {
+else if (nilai >= 0 && nilai < 20) {
     alert("E");
 }
 
@@ -107,12 +107,12 @@ else if (nilai >= 20 && nilai < 40) {
 // console.log(orang[o]); 
 // }
 
-// let buah = document.querySelectorAll('.buah');
-//     for(let e of buah) {
-//         e.addEventListener('click', function() {
-//             this.style.color = 'red';
-//         })
-//     }
+let buah = document.querySelectorAll('.buah');
+    for(let e of buah) {
+        e.addEventListener('click', function() {
+            this.style.color = 'red';
+        })
+    }
 
 // let keluarga = [
 //     {
