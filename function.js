@@ -64,23 +64,40 @@
 
 let game = true;
 
-while(game <=5) {
+let player1Win = '';
+
+let player2Win = '';
+
+while(game <= 5) {
     let angka = Math.floor(Math.random() *3) +1;
-    console.log(angka);
+    console.log('angka:', angka);
 
     let player1 = prompt('player 1 masukkan angka:');
     let player2 = prompt('player 2 masukkan angka:');
 
     if (player1 == player2) {
         alert('tebakan tidak boleh sama');
+        player1Win = 'imbang';
+        player2Win = 'imbang';
     }
-    else if (player1 = angka) {
+    else if (player1 == angka) {
         alert('player1 win');
+        player1Win = 1;
     }
-    else if (player2 = angka) {
+    else if (player2 == angka) {
         alert('player2 win');
+        player2Win = 1;
     }
 
 game++;
 }
 
+if (player1Win > player2Win) {
+    alert('Player 1 Winner');
+}
+else if (player1Win == player2Win) {
+    alert('imbang!');
+}
+else {
+    alert('Player 2 Winner');
+}
